@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Damarian Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Damarian Form</h1>
+    <p id="description">Pendaftaran Keluarga Damarian</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Nama: <input type="text" name="name" id="name" placeholder="Jhon doe" required></label>
+        <label for="number"id="number-label">Umur: <input type="number" name="number" id="number" min="13" max="150" placeholder="18" required> </label>
+        <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="jhondoe00@gmail.com" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender (required)</legend>
+        <label><input type="radio" class="inline" name="gender-choose" value="male" checked> Male</label>
+        <label><input type="radio" class="inline" name="gender-choose" value="female"> Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>Skill (?)</legend>
+        <label><input type="checkbox" class="inline" value="keyboard-warrior">Keyboard warrior<label>
+        <label><input type="checkbox" class="inline" value="fotografer-handal">Fotografer handal<label>
+        <label><input type="checkbox" class="inline" value="peroasting-handal">Peroasting handal<label>
+        <label><input type="checkbox" class="inline" value="penyelam-handal">Penyelam handal<label>
+        <label><input type="checkbox" class="inline" value="pemasak">Pemasak<label>
+        <label><input type="checkbox" class="inline" value="jago-main-game">Jago main game<label>
+        <label><input type="checkbox" class="inline" value="kebal-panas">Kebal panas<label>
+      </fieldset>
+      <fieldset>
+        <label for="profile">
+          Upload fotomu:
+          <input type="file" id="profile" name="profile-picture">
+        </label>
+        <label>
+          Pilih role:
+          <select id="dropdown">
+            <option value="">Choose one</option>
+            <option value="1">Chief</option>
+            <option value="2">Proplayer</option>
+            <option value="3">Farmer</option>
+            <option value="4">Boxer</option>
+            <option value="5">Chef</option>
+          </select>
+        </label>
+        <label>
+          Alasan harus diterima:
+          <textarea rows="3" cols="30" placeholder="bisa menanam cabe sendiri..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" vlaue="Submit" id="submit">
+    </form>
+  </body>
+</html>
